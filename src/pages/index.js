@@ -1,0 +1,6 @@
+export * from './Simulador'
+export * from './Acerca'
+export * from './Capacitacion'
+export * from './CapacitacionFase2'
+export * from './Principal'
+export * from './Registro'

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+  --font__principal: "Inter", sans-serif;
+  --font__secundario: "Josefin Sans", sans-serif;
+}
+
+* {
+  font-family: var(--font__principal);
+}
+
+.capacitacion__Face1 {
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  font-family: var(--font__secundario);
+}
+
+.video {
+  display: flex;
+  gap: 20px;
+  animation: move 2.5s ease-in-out;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+.siguiente {
+  width: 200px;
+  margin: 10px auto;
+}
+
+.siguiente button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  font-size: 15px;
+  font-family: var(--font__principal);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

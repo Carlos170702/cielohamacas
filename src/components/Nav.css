@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Source+Code+Pro&display=swap");
+
+:root {
+  --font__principal: "Inter", sans-serif;
+  --font__secundario: "Josefin Sans", sans-serif;
+  --font__terciario: "Source Code Pro", monospace;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Nav__logo {
+  width: 90px;
+  height: 100px;
+  position: relative;
+}
+.Nav__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.Nav__logo p {
+  position: absolute;
+  bottom: -15px;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font__terciario);
+  color: black;
+}
+.Nav__enlaces {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.Nav__enlace {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.Nav__user {
+  position: relative;
+}
+
+.user {
+  position: absolute;
+  list-style: none;
+  transform: translateX(150px);
+  transition: all 0.5s;
+  list-style: none;
+}
+
+.infUser {
+  list-style: none;
+  position: absolute;
+  width: 120px;
+  right: -30px;
+  background-color: rgba(255, 240, 189, 0.5);
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  transform: translateX(-20px);
+  transition: all 0.5s;
+}
+
+.infUser a {
+  text-decoration: none;
+  color: black;
+}
+
+.pocisionar {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+.Nav__enlace:hover {
+  border-bottom: 2px solid black;
+  transition: 0.5s;
+}
+
+.Nav__hamburger {
+  width: 20px;
+  height: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.Nav__icon {
+  width: 100%;
+  height: 100%;
+  color: black;
+  cursor: pointer;
+}
+
+.Nav__icon--user {
+  font-size: 25px;
+  border-left: 2px solid black;
+  padding-left: 5px;
+}
+
+@media (max-width: 550px) {
+  .Nav__user,
+  .Nav__enlace {
+    display: none;
+  }
+
+  .Nav__hamburger {
+    display: block;
+  }
+
+  .Nav__enlace {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    transform: translateX(200px);
+    display: inline-block;
+    transition: 1s ease;
+  }
+
+  .infHamburger {
+    transform: translateX(0);
+  }
+}

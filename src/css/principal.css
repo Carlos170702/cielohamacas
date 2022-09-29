@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+  --font__principal: "Inter", sans-serif;
+  --font__secundario: 'Josefin Sans', sans-serif;;
+}
+
+.Principal2 {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.background {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.Principal2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.principal__register {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.principal__register h2 {
+  font-size: 40px;
+  font-family: var(--font__secundario);
+  color: white;
+}
+
+.principal__register button {
+  font-size: 15px;
+  background-color: #c9237e;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: var(--font__principal);
+}
+
+.principal__register button:hover {
+  transition: 0.5s;
+  background-color: #bb2276;
+}
+
+
+.productos h1{
+  text-align: center;
+  margin: 10px;
+  background-color: orange;
+  padding: 10px;
+}
+
+.cards{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
