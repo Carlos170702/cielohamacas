@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { Information } from '../components/Information'
 import { NavBar } from '../components/NavBar'
 import { Video } from '../components/Video'
 import '../css/capacitacion.css'
@@ -51,6 +52,7 @@ export const CapacitacionFase2 = () => {
           </button>
         </div>
       </div>
+      <Information />
     </>
   )
 }

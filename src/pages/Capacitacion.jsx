@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 import '../css/capacitacion.css'
 import { useEffect } from "react"
+import { Information } from "../components/Information"
 
 export const Capacitacion = () => {
     const navigate = useNavigate()
@@ -55,6 +56,7 @@ export const Capacitacion = () => {
                     </button>
                 </div>
             </div>
+            <Information />
         </>
     )
 }

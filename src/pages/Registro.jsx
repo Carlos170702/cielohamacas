@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Information } from '../components/Information'
 import { NavBar } from '../components/NavBar'
 import '../css/registro.css'
 
@@ -107,7 +108,7 @@ export const Registro = () => {
           />
         </div>
       </form>
-
+<Information />
     </>
   )
 }
